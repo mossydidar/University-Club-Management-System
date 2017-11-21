@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>BRACU</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+  
+</head>
+<body>
+  
+    <div id="menu">
+    <h3>BRAC UNIVERSITY</h3>
+    	<ul>
+    		<li><a href="">CLUBS & FORUMS</a>
+    		   
+    		   	 <ul>
+      	          	         <li><a href="#">CRICKET CLUB</a> </li>
+      	          	         <li><a href="#">CULTURAL CLUB</a></li>
+      	          	         <li><a href="#">ADVENTURE CLUB</a></li>
+      	          	         <li><a href="#">PHOTOGRAPHY SOCIETY</a></li>
+      	          	         <li><a href="#">BIZ BEE</a></li>
+      	          	         <li><a href="#">CHESS CLUB</a></li>
+      	          	         <li><a href="#">LAW SOCIETY</a></li>
+      	          	         <li><a href="#">PHARMA SOCIETY</a></li>
+      	          	         <li><a href="#">BRACU MONON</a></li>
+      	          	         <li><a href="#">BUSINESS FORUM</a></li>
+      	          	         <li><a href="#">ENTREPRENEURSHIP FORUM</a></li>
+                             <li><a href="#">FILM CLUB</a></li>
+                             <li><a href="#">HERITAGE FORUM</a></li>
+      	                 </ul>
+    		   
+    		</li>
+    		<li><a href="">News & Events</a></li>
+        <li><a href="">Contact Us</a></li>
+    		
+    	</ul>
+
+    </div>
+     <div id="search">
+        <form>
+         <input type="text" name="search" placeholder="Search......">
+        </div>
+
+    <!--Image Slider using Javascript -->
+  <div>  
+  <img class="mySlides" src="brac01.jpg" style="width:100%">
+  <img class="mySlides" src="brac02.jpg" style="width:100%">
+  <img class="mySlides" src="brac03.jpg" style="width:100%">
+  <img class="mySlides" src="brac04.jpg" style="width:100%">
+  
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

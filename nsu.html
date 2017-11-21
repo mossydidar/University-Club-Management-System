@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>NSU</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+  
+</head>
+<body>
+  
+    <div id="menu">
+    <h2>North South University</h2>
+    	<ul>
+    		<li><a href="">CLUBS & FORUMS</a>
+    		   
+    		   	 <ul>
+      	          	         <li><a href="nsuyes.html">YES</a> </li>
+      	          	         <li><a href="nsuss.html">Shangskritik Shangathan</a></li>
+      	          	         <li><a href="nsudc.html">Debating Club</a></li>
+      	          	         <li><a href="#">Cine & Drama Club</a></li>
+      	          	         <li><a href="#">Economists' Forum</a></li>
+      	          	         <li><a href="#">MBA Club</a></li>
+      	          	         <li><a href="#">Computer Club</a></li>
+      	          	         <li><a href="#">Art &Photography Club</a></li>
+      	          	         <li><a href="#">NSU Earth Club</a></li>
+      	          	         <li><a href="sportsclub.html">Sports Club</a></li>
+      	          	         <li><a href="#">NSU English Club</a></li>
+      	                 </ul>
+    		   
+    		</li>
+    		<li><a href="">News & Events</a></li>
+    		<li><a href="index.html">Home Page</a></li>
+    		
+    	</ul>
+
+    </div>
+
+    <!--Image Slider using Javascript -->
+  <div id="img">  
+  <img class="mySlides" src="nsu01.jpg" style="width:100%">
+  <img class="mySlides" src="nsu02.jpg" style="width:100%">
+  <img class="mySlides" src="nsu03.jpg" style="width:100%">
+  <img class="mySlides" src="nsu04.jpg" style="width:100%">
+  
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>du_tourist</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+</head>
+<body>
+  <div class="headline">
+     <h1>DHAKA UNIVERSITY TOURIST SOCIETY</h1> 
+   </div>
+
+   <div id="menu">
+
+   
+   <!-- <h2 style="font-family: georgia">North South University Games and Sports Club</h2>  -->
+         <ul>
+      	          	<li><a href="#">Executive Members</a></li>
+      	          	
+                    <li><a href="buetchess_members.php">General Members</a></li>
+                    <li><a href="#">Upcoming Events</a></li>
+      	          	
+      	          	<li><a href="#">Contact Info</a></li>
+                    <li><a href="#">Alumni</a></li>
+      	          	<li><a href="#">About Us</a></li>
+
+      	          	        
+         </ul>
+   	
+
+   </div>
+
+   <!--Image slide-->
+
+  <div>  
+  <img class="mySlides" src="du02.jpg" style="width:100%">
+  <img class="mySlides" src="du03.jpg" style="width:100%">
+  <img class="mySlides" src="du04.jpg" style="width:100%">
+  
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

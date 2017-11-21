@@ -1,0 +1,62 @@
+<?php
+
+   $host="localhost";
+   $dbuser="root";
+   $pass="";
+   $dbname="dbms_project";
+   $conn=mysqli_connect($host, $dbuser, $pass,$dbname);
+   if (mysqli_connect_errno()) {
+
+   	
+   	die("Connection Failed!".mysqli_connect_errno());
+   } 
+   else{
+   	echo "Connected to database {$dbname}";
+   }
+
+  
+?>
+
+
+<html>
+<head>
+	<title>NSUYES All members</title>
+</head>
+<body>
+
+   <?php
+      $sql="SELECT * FROM member";
+      $res=mysqli_query($conn, $sql);
+      if (!$res)
+       {
+      	die("Query Failed");
+      } 
+      while ($row=mysqli_fetch_assoc($res)) {
+      	foreach ($row as $key => $val) {
+      	
+      	
+      		echo "{$key}: "."{$val}<br />";
+      		
+
+
+      	}
+      	echo "<br /><hr /><br />";
+
+      	
+      }
+      mysqli_free_result($res);
+
+
+
+
+
+   ?>
+    
+
+
+</body>
+</html>
+<?php
+ mysqli_close($conn);
+
+?>

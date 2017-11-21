@@ -1,0 +1,136 @@
+*{
+
+	margin: 0px;
+	padding: 0px;
+	font-family: georgia;
+	text-align: center;
+	
+
+
+
+}
+
+#menu ul{
+	list-style: none;
+	font-size: 18px;
+	font-family: Georgia;
+	text-align: center;
+
+	
+	
+}
+#menu ul li{
+	background-color: rgba(0,0,0,0.5);
+	border: 0.5px solid white;
+	width: 223px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	float: left;
+	position: relative;
+	border-radius: 6px;
+
+	
+
+}
+
+#menu ul li a{
+	text-decoration: none;
+	color:white;
+	display: block;
+
+}
+
+#menu ul li a:hover {
+	background-color: #2F4F4F;
+	border-radius: 8px;
+
+}
+
+#menu ul ul{
+	position: absolute;
+	display: none;
+
+    
+}
+
+#menu ul li:hover > ul{
+	display: block;
+
+}
+
+#menu ul ul ul{
+	margin-left: 227px;
+	top: 0px;
+
+    
+}
+
+input[type=text] {
+    border: 2px solid white;
+	width: 223px;
+	height: 40px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    /*background-image: url('search.png');*/ 
+    padding-top: 40px;
+    background-position: 1px 1px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+.headline{
+	font-style: georgia;
+	text-align: center;
+	color: #2F4F4F;
+
+}
+
+
+#public{
+	font-size: 18px;
+	text-align: center;
+
+}
+
+#private{
+	font-size: 22px;
+	
+	text-align: center;
+	background-image: url(photo17.jpg);
+	 position:absolute;
+	 z-index:0;
+	 left:0;
+	 top:0;
+	 width:100%;
+	 height:100%;
+	 background-repeat: no-repeat;
+
+
+}
+#public{
+	font-size: 22px;
+	text-decoration: 
+	text-align: center;
+	background-image: url(photo18.jpg);
+	 position:absolute;
+	 z-index:0;
+	 left:0;
+	 top:0;
+	 width:100%;
+	 height:100%;
+	 background-repeat: no-repeat;
+
+ 
+
+}
+
